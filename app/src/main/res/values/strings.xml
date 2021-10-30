@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SolitarioCruel</string>
+    <string name="titulo">Solitario Cruel</string>
+    <string name="jugar">Jugar</string>
+    <string name="marcador">Marcador</string>
+    <string name="inst">Instrucciones</string>
+    <string name="creditos">Creditos</string>
+    <string name="tituloConfig">Configuración del Juego</string>
+    <string name="textoJugador">Jugador</string>
+    <string name="textoPedirNombre">Ingrese su nombre</string>
+    <string name="textoMusica">Música</string>
+    <string name="textoTimer">Timer</string>
+    <string name="cartasbase">N° Cartas en base</string>
+    <string name="numjugadas">N° Redeals</string>
+    <string name="tiempo">Tiempo</string>
+    <string name="jugadorGame">Jugador: \u0020 \u0020 \u0020</string>
+    <string name="nickname">Nickname</string>
+    <string name="tiempoGame">Tiempo: \u0020 \u0020 \u0020</string>
+    <string name="cartasbaseGame">Cartas en base: \u0020 \u0020 \u0020</string>
+    <string name="redealsGame">Redeals: \u0020 \u0020 \u0020</string>
+    <string name="cero">0</string>
+    <string name="fin">Fin</string>
+    <string name="irMarcadores">Ver Marcador</string>
+    <string name="volverMenu">Volver a Menu</string>
+    <string name="tituloCred">Desarrolladores</string>
+    <string name="names">\nEmilio Contreras\nCatalina Pezo\n\n</string>
+    <string name="curso">Curso\nDesarrollo de Aplicaciones para Dispositivos Móviles\nProfesor Mario Medina\n\n</string>
+    <string name="fecha">Julio de 2019\n\n\n</string>
+    <string name="instText">\nEl objetivo del juego es lograr guardar todas las cartas en las 4 pilas de la parte superior de la mesa, de manera ascendiente sobre los ases de cada pinta.\n\nPara lograr dicho objetivo, se pueden hacer pilas de cartas sobre los 12 mazos dispuestos en la mesa, ubicando cada carta sobre otra superior a ella y de su misma pinta.\n\nA fin de mover las cartas, simplemente debe tocar la carta que desea reposicionar y ella se dirigirá a su lugar correspondiente.\n\nSi se queda sin movimientos, puede presionar el botón REDEAL, que reorganizará las cartas de los mazos en mesa.\n\nEl juego termina una vez ya no hayan más jugadas ni reposiciones, o cuando se completen las 4 pilas de cartas.\n\n\n¡A jugar!\n\n\n\n</string>
+
+</resources>

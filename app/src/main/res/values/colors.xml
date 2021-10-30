@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="verdeAgua">#008577</color>
+    <color name="verdeOscuro">#00574B</color>
+    <color name="fucsia">#D81B60</color>
+    <color name="noir">#000000</color>
+    <color name="negroMain">#E8000000</color>
+    <color name="negroBack">#111010</color>
+    <color name="negroGame">#FF303030</color>
+    <color name="grisTabla">#2E2626</color>
+    <color name="rosadoTabla">#B85959</color>
+    <color name="rojoTabla">#B42E2E</color>
+    <color name="rojoTitulo">#E9F00202</color>
+    <color name="rojoBoton">#ABB61515</color>
+    <color name="rojoPrimary">#FFBE3131</color>
+    <color name="rojoDark">#FF830D0D</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteName">#BEFFFFFF</color>
+    <color name="rojoLetras">#E01616</color>
+    <color name="rojoDark2">#AC0404</color>
+</resources>

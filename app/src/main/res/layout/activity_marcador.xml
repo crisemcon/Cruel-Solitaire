@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/noir"
+    android:onClick="volver"
+    tools:context=".MarcadorActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <TextView
+        android:id="@+id/tituloMarcador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="@string/marcador"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/scrollview"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tituloMarcador">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/negroBack"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tabla"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/grisTabla">
+
+                <TableRow
+                    android:id="@+id/titulostabla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/campoName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rojoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="@string/textoJugador"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/campoCartabase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rojoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="@string/cartasbase"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/campoJugadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rojoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="@string/numjugadas"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/campoTiempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rojoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="@string/tiempo"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/top10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cartasbase10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/jugadas10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tiempo10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/rosadoTabla"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/noir"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
